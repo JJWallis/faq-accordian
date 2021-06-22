@@ -1,0 +1,88 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+#### Text
+
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 
+*/
+
+body {
+  margin: 0;
+  background: linear-gradient(to top, #6565e7, #af67e9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background: white url("/images/bg-pattern-desktop.svg") no-repeat;
+  background-position: 700% 80%;
+  background-size: 110%;
+  box-shadow: 2px 15px 15px -15px #000;
+  border-radius: 20px;
+  max-width: 814px;
+  min-height: 600px;
+  width: 90%;
+}
+
+.empty-div,
+article {
+  flex: 1 1 50%;
+}
+
+article {
+  align-items: center;
+}
+
+p {
+  display: none;
+}
+
+a {
+  display: block;
+}
