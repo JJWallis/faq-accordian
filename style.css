@@ -78,7 +78,7 @@ p {
   width: 70%;
 }
 
-/* JS CLASSES  */
+/*/////////////// JS CLASSES  //////////////*/
 
 .hidden {
   display: none;
@@ -92,3 +92,38 @@ p {
 .seperator {
   border-bottom: 1px solid hsl(240, 5%, 91%);
 }
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+/*///////////// MEDIA QUERIERS ////////////*/
+
+@media (max-width: 575px) {
+
+.wrapper {
+    flex-direction: column;
+    background: white url('/images/illustration-woman-online-mobile.svg') no-repeat 0% 0% / 50%;
+}
+
+.dice {
+  display: none;
+}
+
+.empty-div {
+  background: white url('/images/bg-pattern-mobile.svg') no-repeat center 0% / 65%;
+}
+
+article {
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+}
+
+/*////// TO DO ////////////
+Layer background images with wrapper as context 
+Position image relative to body - must be in src code to do so (hide normally - show when in media query) 
+*/

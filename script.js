@@ -3,18 +3,18 @@
 const links = document.getElementsByTagName('a');
 const article = document.querySelector('article');
 
-function appendArrowButtons() {
+function appendArrowIcons() {
     const arrow = document.createElement('img');
     arrow.src = '/images/icon-arrow-down.svg';
     arrow.alt = 'arrow-image';
-    arrow.className = 'arrow';
 
     for (let i = 0; i < links.length; i++) {
         links[i].appendChild(arrow);
     }
+    return arrow;
 }
 
-appendArrowButtons();
+const arrow = appendArrowIcons();
 
 article.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
@@ -29,7 +29,8 @@ article.addEventListener('click', (e) => {
         } else {
             link.style.paddingBottom = '20px';
         }
+        arrow.classList.toggle('arrow');
     }
 });
 
-// Invert arrow icon
+// positioning + number
