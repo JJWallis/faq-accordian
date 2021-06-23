@@ -1,18 +1,6 @@
 /*
-
-The designs were created to the following widths:
-
 - Mobile: 375px
 - Desktop: 1440px
-
-#### Dividers
-
-- Light grayish blue: hsl(240, 5%, 91%)
-
-### Font
-
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700 
 */
 
 body {
@@ -68,15 +56,9 @@ h1 {
   margin: 0;
 }
 
-p {
-  display: none;
-}
-
 a {
   display: block;
-  width: 70%;
   padding: 20px 0px;
-  border-bottom: 1px solid black;
   color: hsl(240, 6%, 50%);
   text-decoration-line: none;
   font-weight: lighter;
@@ -84,4 +66,29 @@ a {
 
 a:hover {
   color: lightsalmon;
+}
+
+p {
+  font-size: .8em;
+  padding-bottom: 10px;
+}
+
+a,
+p {
+  width: 70%;
+}
+
+/* JS CLASSES  */
+
+.hidden {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+  color: black;
+}
+
+.seperator {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
 }
