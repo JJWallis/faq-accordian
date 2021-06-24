@@ -4,22 +4,23 @@ const links = document.getElementsByTagName('a');
 const article = document.querySelector('article');
 
 function appendArrowIcons() {
-    const arrow = document.createElement('img');
-    arrow.src = '/images/icon-arrow-down.svg';
-    arrow.alt = 'arrow-image';
-
     for (let i = 0; i < links.length; i++) {
+        const arrow = document.createElement('img');
+        arrow.src = '/images/icon-arrow-down.svg';
+        arrow.alt = 'arrow-image';
+        arrow.className = 'arrow';
         links[i].appendChild(arrow);
     }
-    return arrow;
 }
 
-const arrow = appendArrowIcons();
+appendArrowIcons();
 
 article.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         const link = e.target;
+        const linkId = link.getAttribute('id');
         const nextSibling = link.nextElementSibling;
+        const arrow = document.querySelector(`#${linkId} img`);
         link.classList.toggle('bold');
         nextSibling.classList.toggle('hidden');
         link.classList.toggle('seperator');
@@ -29,8 +30,12 @@ article.addEventListener('click', (e) => {
         } else {
             link.style.paddingBottom = '20px';
         }
-        arrow.classList.toggle('arrow');
+        if (!arrow.classList.contains('invert')) {
+            arrow.classList.toggle('invert');
+        } else {
+            arrow.classList.toggle('invert');
+        }
     }
 });
 
-// positioning + number
+// positioning
