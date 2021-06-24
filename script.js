@@ -19,6 +19,7 @@ article.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         const link = e.target;
         const linkId = link.getAttribute('id');
+        console.log(linkId);
         const nextSibling = link.nextElementSibling;
         const arrow = document.querySelector(`#${linkId} img`);
         link.classList.toggle('bold');
