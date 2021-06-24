@@ -69,7 +69,7 @@ a:hover {
 }
 
 p {
-  font-size: 0.8em;
+  font-size: .8em;
   padding-bottom: 10px;
 }
 
@@ -93,35 +93,34 @@ p {
   border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
-.invert {
+.arrow {
   transform: rotate(180deg);
 }
 
 /*///////////// MEDIA QUERIERS ////////////*/
 
 @media (max-width: 575px) {
-  .wrapper {
+
+.wrapper {
     flex-direction: column;
-    background: white url("/images/illustration-woman-online-mobile.svg")
-      no-repeat 0% 0% / 50%;
-  }
+    background: white url('/images/illustration-woman-online-mobile.svg') no-repeat 0% 0% / 50%;
+}
 
-  .dice {
-    display: none;
-  }
+.dice {
+  display: none;
+}
 
-  .empty-div {
-    background: white url("/images/bg-pattern-mobile.svg") no-repeat center 0% /
-      65%;
-  }
+.empty-div {
+  background: white url('/images/bg-pattern-mobile.svg') no-repeat center 0% / 65%;
+}
 
-  article {
-    align-items: center;
-  }
+article {
+  align-items: center;
+}
 
-  h1 {
-    font-size: 2em;
-  }
+h1 {
+  font-size: 2em;
+}
 }
 
 /*////// TO DO ////////////
