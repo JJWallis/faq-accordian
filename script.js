@@ -19,7 +19,6 @@ article.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         const link = e.target;
         const linkId = link.getAttribute('id');
-        console.log(linkId);
         const nextSibling = link.nextElementSibling;
         const arrow = document.querySelector(`#${linkId} img`);
         link.classList.toggle('bold');
@@ -32,13 +31,9 @@ article.addEventListener('click', (e) => {
             link.style.paddingBottom = '20px';
         }
         if (!arrow.classList.contains('invert')) {
-            arrow.classList.toggle('invert');
+            arrow.classList.add('invert');
         } else {
-            arrow.classList.toggle('invert');
+            arrow.classList.remove('invert');
         }
     }
 });
-
-// positioning
-// store a ref to link's descendant img tag 
-// give each link a specific ID (not just in HREF) 

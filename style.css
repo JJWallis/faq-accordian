@@ -28,6 +28,10 @@ body {
   box-shadow: 2px 15px 15px -15px #000;
 }
 
+.mobile-img {
+  display: none;
+}
+
 .dice {
   position: absolute;
   top: 30%;
@@ -73,9 +77,11 @@ p {
   padding-bottom: 10px;
 }
 
-a,
-p {
+.links-container {
   width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*/////////////// JS CLASSES  //////////////*/
@@ -99,11 +105,30 @@ p {
 
 /*///////////// MEDIA QUERIERS ////////////*/
 
+@media (max-width: 952px) {
+  .links-container {
+    width: 90%;
+  }
+}
+
 @media (max-width: 575px) {
+  /* background: white url("/images/bg-pattern-mobile.svg") no-repeat center 0% /
+      65%; */
+
   .wrapper {
     flex-direction: column;
-    background: white url("/images/illustration-woman-online-mobile.svg")
-      no-repeat 0% 0% / 50%;
+    min-height: auto;
+    background: white url("/images/bg-pattern-mobile.svg") no-repeat center 0% /
+      65%;
+  }
+
+  .mobile-img {
+    display: inline;
+    width: 70%;
+    position: absolute;
+    top: -100px;
+    left: 15%;
+    right: 25%;
   }
 
   .dice {
@@ -111,8 +136,7 @@ p {
   }
 
   .empty-div {
-    background: white url("/images/bg-pattern-mobile.svg") no-repeat center 0% /
-      65%;
+    display: none;
   }
 
   article {
@@ -121,10 +145,16 @@ p {
 
   h1 {
     font-size: 2em;
+    margin-top: 100px;
+  }
+
+  .links-container {
+    width: 90%;
   }
 }
 
 /*////// TO DO ////////////
 Layer background images with wrapper as context 
 Position image relative to body - must be in src code to do so (hide normally - show when in media query) 
+Expand written content as viewport shrinks - prevent word wrapping (tweakpoints)
 */
