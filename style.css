@@ -9,6 +9,7 @@ body {
   margin: 0;
   background: linear-gradient(to top, #6565e7, #af67e9);
   font: 1em/1.5 "Kumbh Sans", sans-serif;
+  box-sizing: border-box; /*///// IF BUG - DIDNT PUT ON ORIGINALLY!!!!! ///////*/
 }
 
 .wrapper {
