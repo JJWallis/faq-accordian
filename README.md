@@ -1,16 +1,85 @@
-# resources
+# Frontend Mentor - FAQ accordion card solution
 
-https://www.youtube.com/watch?v=lUaw-AA9HnA&ab_channel=KevinPowell - demostrating proper use case for positioning (not using it for something we shouldn't)
+This is a solution to the [FAQ accordion card](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam) challenge on Frontend Mentor
 
-# proud
+## Table of contents
 
- <!-- if (!arrow.classList.contains('invert')) {
-            arrow.classList.add('invert');
-        } else {
-            arrow.classList.remove('invert');
-        } - first time add + removing class based off of event | -->
+-  [Overview](#overview)
+   -  [The challenge](#the-challenge)
+   -  [Screenshot](#screenshot)
+   -  [Links](#links)
+-  [My process](#my-process)
+   -  [Built with](#built-with)
+   -  [What I learned](#what-i-learned)
+   -  [Continued development](#continued-development)
+   -  [Useful resources](#useful-resources)
+-  [Author](#author)
+-  [Acknowledgments](#acknowledgments)
 
-<!-- const arrow = document.querySelector(`#${linkId} img`); --> - 1st time dynamicalyl selecting an el based off of a var (wasn't thinking of using interpolation here in this syntax - drums into you idea of doing this wherever a str is required)
+## Overview
+
+### The challenge
+
+Your users should be able to:
+
+-  View the optimal layout for the component depending on their device's screen size
+-  See hover states for all interactive elements on the page
+-  Hide/Show the answer to a question when the question is clicked
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+### Links
+
+-  Solution URL:
+-  Live Site URL:
+
+## My process
+
+### Built with
+
+-  Semantic HTML5 markup
+-  Flexbox
+-  Mobile-first workflow
+
+### What I learned
+
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
+
+```css -- first time controlling a bg-img
+.empty-div {
+   background: url('/images/illustration-woman-online-desktop.svg') no-repeat
+      300% 10% / 110%;
+}
+```
+
+```js -- first time add + removing class based off of event
+if (!arrow.classList.contains('invert')) {
+   arrow.classList.add('invert')
+} else {
+   arrow.classList.remove('invert')
+}
+```
+
+```js -- 1st time dynamicalyl selecting an el based off of a var (wasn't thinking of using interpolation here in this syntax - drums into you idea of doing this wherever a str is required)
+const arrow = document.querySelector(`#${linkId} img`)
+```
+
+### Continued development
+
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+
+### Useful resources
+
+-  [Position Absolute - Practical Examples](https://www.youtube.com/watch?v=lUaw-AA9HnA&ab_channel=KevinPowell) - demostrating proper use case for positioning (not using it for something we shouldn't)
+
+## Author
+
+-  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
+-  Linkedin - [Joshua Jameson-Wallis]()
 
 ###### TODO
 
