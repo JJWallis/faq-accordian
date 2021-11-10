@@ -64,11 +64,7 @@ Upon research into building accessible accordians, I learned that a <button> is 
    background: url('/images/illustration-woman-online-desktop.svg') no-repeat
       300% 10% / 110%;
 }
-```
 
-This was my first time controlling an SVG as a background image, as up until this point I had only worked with both png or jpg formats. Controlling the size/scalability and positioning as the viewport grew wider quickly became the hardest aspect to control. Having a fluid horizontal position allowed the image to respond to viewport changes, yet in the future I will practice using fixed px units to see what effect that may have on controlling the layout.
-
-```css
 .mobile-img {
    display: inline;
    width: 72%;
@@ -78,16 +74,7 @@ This was my first time controlling an SVG as a background image, as up until thi
 }
 ```
 
-positioning primary SVGS | lots of research on responsive design with positioning - because of all the bugs (alignment went off all time as viewport shrank) | difference between fluid + fixed unit values (% would cause SVG to move with container + viewport but fixed size in px so it wouldn't scale unnecessarily - before always thought about imgs in a fluid manner with max-width: 100%;)
-
-```css
-.wrapper {
-   flex-direction: column;
-   min-height: auto;
-}
-```
-
-Max-height + overflow: scroll on questions container vs max-height on parent wrapper (vs fluid + constantly growing container - stretched if didn't handle) | overflow on body - hide scrollbars
+This was my first time controlling an SVG as a background image, as up until this point I had only worked with both png or jpg formats. Controlling the size/scalability and positioning as the viewport grew wider quickly became the hardest aspect to control. Having a fluid horizontal position allowed the image to respond to viewport changes, yet in the future I will practice using fixed px units to see what effect that may have on controlling the layout. Ultimately since these issues were happening with my positioned SVGs along the top of the card, my research into 'responsive positioning' showed how difficult that layout technique can be to handle responsively, and that we mustn't use it in places it's not designed for.
 
 ```js
 if (!arrow.classList.contains('invert')) {
@@ -97,19 +84,21 @@ if (!arrow.classList.contains('invert')) {
 }
 ```
 
-first time add + removing class based off of event (vs style obj) | good practice in traversing DOM on event handler fire - classList() vs style obj (used both to compare + contrast syntax differences - no str value, less dot notation) |
+The classList object in Javascript provides a much cleaner syntax for controlling classes with the DOM vs the style object. In this project specifically, I learnt how to add and remove the 'invert' class for my arrows based off a click event on the parent button.
 
 ```js
 const arrow = document.querySelector(`#${linkId} img`)
 ```
 
-1st time dynamicalyl selecting an el based off of a var (wasn't thinking of using interpolation here in this syntax - drums into you idea of doing this wherever a str is required) | Appending arrows via JS on load vs hard-coded in DOM (HTML) | dynamic + cleaner HTML - however space-between flex layout requires that 2nd child to be present (caused layout bug) | solution - <i> tag with pseudo el attatched with arrow img as content (another way of showing) | still good practice for building els in JS + thinking dynamically (loop to append)
+I was really proud of this `querySelector` syntax above, because it was the first time I was able to dynamically select an element using interpolation in a part of the language I would not have thought to use before. I had recently learned about using interpolation within these parts of the language, and here I successfully remembered how to do so on my own. Although unsuccessful, I did originally append the arrow icons via a loop in Javascript on load vs hardcoding into the DOM, in an attempt to cleanup my HTML code and think more dynamically. The reason it didn't work is because of the required `space-between` layout for the questions and arrows, which required them to be present in the HTML code for that pinning effect to occur.
 
 ### Continued development
 
-bulky conditionals - looking forward to other ways of writing logic (lots of parenthesis)
+My javascript code is still fairly bloated with bulky conditional statements and 'if' blocks, which I would like to address with other refactored methods of comparing two values to obtain one as a result.
 
-Design solutions - sometimes responsive height is not desired | fixed units for img values (size or position)
+Although the design problems faced within the CSS provided a great challenge, I'm still not at the level to feel confident in tackling them without breaking my current layout. I know with more practice I will start to gain more ideas about how to tackle layout challenges, since there is always multiple ways to achieve the same result in CSS.
+
+Finally, I would like to learn more about other classList methods that are available in Javascript, such as the `toggle()` method. Even without knowing everything about what that method does, I can already see how I could refactor certain sections of code with it.
 
 ### Useful resources
 
