@@ -90,7 +90,7 @@ The classList object in Javascript provides a much cleaner syntax for controllin
 const arrow = document.querySelector(`#${linkId} img`)
 ```
 
-I was really proud of this `querySelector` syntax above, because it was the first time I was able to dynamically select an element using interpolation in a part of the language I would not have thought to use before. I had recently learned about using interpolation within these parts of the language, and here I successfully remembered how to do so on my own. Although unsuccessful, I did originally append the arrow icons via a loop in Javascript on load vs hardcoding into the DOM, in an attempt to cleanup my HTML code and think more dynamically. The reason it didn't work is because of the required `space-between` layout for the questions and arrows, which required them to be present in the HTML code for that pinning effect to occur.
+I was really proud of this `querySelector` syntax above, because it was the first time I was able to dynamically select an element using interpolation in a part of the language I would not have thought to use it before. I had recently learned about using interpolation within these parts of the language, and here I successfully remembered how to do so on my own. Although unsuccessful, I did originally append the arrow icons via a loop in Javascript on load vs hardcoding into the DOM, in an attempt to cleanup my HTML code and think more dynamically. The reason it didn't work is because of the required `space-between` layout for the questions and arrows, which required them to be present in the HTML code for that pinning effect to occur.
 
 ### Continued development
 
