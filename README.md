@@ -57,7 +57,7 @@ Your users should be able to:
 </button>
 ```
 
-Button wrapper for questions - accessiblity for free (even though doesn't register as valid in W3 validator) | heading + arrow as children + p question under button instead | Camel case ids - don't do next time (cross language)
+Upon research into building accessible accordians, I learned that a <button> is a great wrapper element for housing the question and dynamically revealed answer, since they provide so much built-in accessibility for free. Interestingly the W3 HTML validator highlights it as invalid HTML to have child paragraphs (or headings for example) inside a button, yet it would be invalid to use a <a> since we're not navigating to an external page.
 
 ```css
 .empty-div {
@@ -66,7 +66,7 @@ Button wrapper for questions - accessiblity for free (even though doesn't regist
 }
 ```
 
-First time controlling a bg-img in SVG style
+This was my first time controlling an SVG as a background image, as up until this point I had only worked with both png or jpg formats. Controlling the size/scalability and positioning as the viewport grew wider quickly became the hardest aspect to control. Having a fluid horizontal position allowed the image to respond to viewport changes, yet in the future I will practice using fixed px units to see what effect that may have on controlling the layout.
 
 ```css
 .mobile-img {
@@ -109,7 +109,7 @@ const arrow = document.querySelector(`#${linkId} img`)
 
 bulky conditionals - looking forward to other ways of writing logic (lots of parenthesis)
 
-Design solutions - sometimes responsive height is not desired
+Design solutions - sometimes responsive height is not desired | fixed units for img values (size or position)
 
 ### Useful resources
 
