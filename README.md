@@ -108,7 +108,3 @@ Finally, I would like to learn more about other classList methods that are avail
 
 -  Website - [Joshua Jameson-Wallis](https://joshuajamesonwallis.com)
 -  Linkedin - [Joshua Jameson-Wallis]()
-
-Testing, testing, testing
-
-Testing, testing, testing
