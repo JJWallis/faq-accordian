@@ -102,7 +102,7 @@ Finally, I would like to learn more about other classList methods that are avail
 
 ### Useful resources
 
--  [Position Absolute - Practical Examples](https://www.youtube.com/watch?v=lUaw-AA9HnA&ab_channel=KevinPowell) - demostrating proper use case for positioning (not using it for something we shouldn't)
+-  [Position Absolute - Practical Examples](https://www.youtube.com/watch?v=lUaw-AA9HnA&ab_channel=KevinPowell) - This video demostrated multiple proper use cases for positioning content, and not using it for something we shouldn't.
 
 ## Author
 
