@@ -74,7 +74,7 @@ After researching about building accessible accordians, I learned that using a `
 }
 ```
 
-This was my first time controlling an SVG as a background image, as up until this point I had only worked with both png and jpg formats. Controlling the size and positioning as the viewport grew wider quickly became the most challenging feature. Having a fluid horizontal position allowed the image to respond to viewport changes, yet in the future I will practice using fixed px units to see what effect that may have on controlling the layout. Ultimately, since these issues were happening with my positioned SVGs along the top of the card, my research into 'responsive positioning' showed how difficult that layout technique can be to handle responsively, and that we shouldn't use it where not appropriate.
+This was my first time controlling an SVG as a background image. I applied a fluid horizontal position allowed the image to respond to viewport changes, yet in the future I will practice using fixed px units to see what effect that may have on controlling the layout. Ultimately, since these issues were happening with my positioned SVGs along the top of the card, my research into 'responsive positioning' showed how difficult that layout technique can be to handle responsively, and that we should only use it if necessary.
 
 ```js
 if (!arrow.classList.contains('invert')) {
