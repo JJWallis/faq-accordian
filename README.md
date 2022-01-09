@@ -57,7 +57,7 @@ Your users should be able to:
 </button>
 ```
 
-After researching about building accessible accordians, I learned that a `<button>` is a great wrapper element for housing the question and dynamically revealed answer, since they provide so much built-in accessibility for free. Interestingly, the W3 HTML validator highlights it as invalid HTML to have child paragraphs (or headings) inside a button, yet it would be invalid to use a ling since we're not navigating to an external page.
+After researching about building accessible accordians, I learned that using a `<button>` as the parent wrapper for housing the question and answer provides a lot of built-in accessibility for free. Interestingly, the W3 HTML validator highlights it as invalid HTML to have child paragraphs (or headings) inside a button, yet it would be invalid to use a link since we're not navigating to an external page.
 
 ```css
 .empty-div {
