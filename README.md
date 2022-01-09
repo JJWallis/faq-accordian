@@ -31,8 +31,7 @@ Your users should be able to:
 
 ### Links
 
--  Solution URL:
--  Live Site URL:
+-  Live Site URL: https://faq-accordian-jjw.netlify.app/#is
 
 ## My process
 
