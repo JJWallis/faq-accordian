@@ -41,7 +41,7 @@ Your users should be able to:
 -  Semantic HTML5 markup
 -  Flexbox
 -  Mobile-first workflow
--  Vanilla JS
+-  Javascript
 
 ### What I learned
 
