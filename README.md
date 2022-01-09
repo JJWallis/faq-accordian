@@ -41,7 +41,7 @@ Your users should be able to:
 -  Semantic HTML5 markup
 -  Flexbox
 -  Mobile-first workflow
--  Javascript
+-  JavaScript
 
 ### What I learned
 
@@ -84,13 +84,13 @@ if (!arrow.classList.contains('invert')) {
 }
 ```
 
-The `classList` object in JavaScript provides a much cleaner syntax for controlling styles with the DOM versus the style object. In this project specifically, I learnt how to add and remove the 'invert' class for my arrows based off a click event firing on the parent button.
+The `classList` object in JavaScript provides a much cleaner syntax for controlling styles within the DOM as opposed to the style object. For this project specifically, I learnt how to add and remove the 'invert' class for my arrows based off a click event firing on the parent button.
 
 ```js
 const arrow = document.querySelector(`#${linkId} img`)
 ```
 
-I was really proud of the `querySelector` syntax above, because it was the first time I was able to dynamically select an element using interpolation in this part of the language. Although unsuccessful, I did originally append the arrow icons via a loop in JavaScript on load instead of hardcoding them into the DOM, in an attempt to cleanup my HTML code and think more dynamically. The reason it didn't work was because of flexs' `space-between` layout, which required the arrows to be present in the HTML code for that pinning effect to occur.
+I was really proud of the `querySelector` syntax above because it was the first time I was able to dynamically select an element using interpolation in this part of the language. Although unsuccessful, I did originally append the arrow icons via a loop in JavaScript on load instead of hardcoding them into the DOM, in an attempt to cleanup my HTML code and think more dynamically. The reason it didn't work was because of flexs' `space-between` layout, which required the arrows to be present in the HTML code for that pinning effect to occur.
 
 ### Continued development
 
