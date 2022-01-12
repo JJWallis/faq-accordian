@@ -90,17 +90,28 @@ p {
    display: none;
 }
 
-.bold {
-   font-weight: bold;
-   color: black;
-}
-
 .seperator {
    border-bottom: 1px solid hsl(240, 5%, 91%);
 }
 
-.invert {
+.seperator-link {
+   position: relative;
+}
+
+.seperator-link::after {
+   content: url('./images/icon-arrow-down.svg');
+   position: absolute;
+   right: 10px;
+}
+
+.active::after {
    transform: rotate(180deg);
+   top: 22px;
+}
+
+.bold {
+   font-weight: bold;
+   color: black;
 }
 
 /*///////////// MEDIA QUERIERS ////////////*/
