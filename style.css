@@ -4,7 +4,6 @@ body {
    align-items: center;
    justify-content: center;
    min-height: 100vh;
-   overflow: hidden;
    padding: 20px 0;
    margin: 0;
    background: linear-gradient(to top, #6565e7, #af67e9);
@@ -16,8 +15,9 @@ body {
    display: flex;
    flex-wrap: wrap;
    max-width: 750px;
-   width: 70%;
-   height: 460px;
+   width: 80%;
+   max-width: 700px;
+   min-height: 460px;
    padding: 25px 40px 30px 0px;
    position: relative;
    border-radius: 25px;
@@ -105,12 +105,14 @@ p {
 
 /*///////////// MEDIA QUERIERS ////////////*/
 
-@media (max-width: 585px) {
+@media (max-width: 700px) {
    body {
       overflow: visible;
    }
 
    .wrapper {
+      padding: 25px 10px 0;
+      max-width: 400px;
       flex-direction: column;
       min-height: auto;
       background: white url('/images/bg-pattern-mobile.svg') no-repeat center 0% /
@@ -119,10 +121,10 @@ p {
 
    .mobile-img {
       display: inline;
-      width: 72%;
+      width: 250px;
       position: absolute;
-      top: -110px;
-      left: 10%;
+      top: -80px;
+      left: 16%;
    }
 
    .dice {
@@ -139,7 +141,7 @@ p {
    }
 
    .links-container {
-      width: 90%;
+      width: 100%;
    }
 
    h1 {
